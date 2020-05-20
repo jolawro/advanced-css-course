@@ -6,3 +6,37 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+
+/* Normalize css for all webseat. Reset universal selector */
+/* Reset start */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+/* Properties for font should be in body element, becouse font porpertis works with inheritant rule */
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    /* padding isn't ibherited */
+    padding: 30px;
+}
+/* Reset end*/
+
+/* Header */
+.header {
+    height: 95vh;
+    /* gradient in backgound-image  */
+    background-image: linear-gradient( to right bottom, rgba(126, 213, 111, 0.8), rgb(40, 180, 131, 0.8)), url(../img/hero.jpg);
+    background-size: cover;
+    /* top stay the same, but other position cheagned */
+    background-position: top;
+    /* modder css clpi-path for setting which part of the image should be visible  */
+    /* polygon(x y, x y, x y) specify directions for cornerrs of image where the point of this corrners should be */
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
