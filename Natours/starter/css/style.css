@@ -16,6 +16,7 @@ Dark green: #28b485
 }
 
 /* Properties for font should be in body element, becouse font porpertis works with inheritant rule */
+/* font downloaded from external sources google fonts (SDN link) in main html file */
 
 body {
     font-family: "Lato", sans-serif;
@@ -30,6 +31,7 @@ body {
 
 /* Header */
 .header {
+    position: relative;
     height: 95vh;
     /* gradient in backgound-image  */
     background-image: linear-gradient( to right bottom, rgba(126, 213, 111, 0.8), rgb(40, 180, 131, 0.8)), url(../img/hero.jpg);
@@ -39,4 +41,46 @@ body {
     /* modder css clpi-path for setting which part of the image should be visible  */
     /* polygon(x y, x y, x y) specify directions for cornerrs of image where the point of this corrners should be */
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box {
+    /* position element on the left top corner: posotion: absolute or float? first use absolute */
+    position: absolute;
+/* were are reference of this position? from parrent, which is header. So we need to put position relative in class .header */
+    top: 40px;
+    left: 40px;
+}
+
+/* set size of the img */
+.logo {
+    height: 53px;
+/*width: will fit automaticly by browser  */
+}
+/* position box in the middle of the page with absolute positioning */
+.text-box {
+    position: absolute;
+    /* relatet to parrent */
+    top: 40%;
+    left: 50%;
+    /* relatet to element itself */
+    transform: translate(-50%, -50%);
+}
+
+.heading-promary {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.heading-promary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+}
+.heading-promary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+
 }
