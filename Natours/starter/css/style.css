@@ -9,10 +9,17 @@ Dark green: #28b485
 
 /* Normalize css for all webseat. Reset universal selector */
 /* Reset start */
-* {
+*,
+*::after,
+*::before {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box; 
+    box-sizing: inherit; 
+}
+
+/* inhtml is place for root font-size use % for resizing page by user*/
+html {
+font-size: 62.5%;
 }
 
 /* Properties for font should be in body element, becouse font porpertis works with inheritant rule */
@@ -21,11 +28,13 @@ Dark green: #28b485
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 1.7;
     color: #777;
     /* padding isn't ibherited */
-    padding: 30px;
+    padding: 3rem;
+    box-sizing: border-box; 
+
 }
 /* Reset end*/
 
@@ -47,13 +56,13 @@ body {
     /* position element on the left top corner: posotion: absolute or float? first use absolute */
     position: absolute;
 /* were are reference of this position? from parrent, which is header. So we need to put position relative in class .header */
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
 
 /* set size of the img */
 .logo {
-    height: 53px;
+    height: 5.3rem;
 /*width: will fit automaticly by browser  */
 }
 /* position box in the middle of the page with absolute positioning */
@@ -65,20 +74,21 @@ body {
     /* relatet to element itself */
     transform: translate(-50%, -50%);
     text-align: center;
+    font-size: 1.6rem;
 }
 
 .heading-promary {
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .heading-promary-main {
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
 
     animation-name: moveInleft;
     animation-duration: 1s;
@@ -92,9 +102,9 @@ body {
 }
 .heading-promary-sub {
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 17.4px;
+    letter-spacing: 1.75rem;
 
     animation-name:  moveInRight;
     animation-duration: 1s;
@@ -104,10 +114,10 @@ body {
 @keyframes moveInleft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
     80% {
-        transform: translateX(10px);
+        transform: translateX(1rem);
 
     }
     100% {
@@ -119,10 +129,10 @@ body {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
     80% {
-        transform: translateX(-20px);
+        transform: translateX(-2rem);
     }
     100% {
         opacity: 1;
@@ -134,21 +144,21 @@ body {
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     /* add inline-block, if we want to add some width or padding */
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all .2s;
     position: relative;
 }
 
 .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 }
 .btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    transform: translateY(-0.1rem);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
 
 .btn-white {
@@ -166,7 +176,7 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all 0.4s;
 
 }
@@ -182,10 +192,10 @@ body {
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(10rem);
     }
     80% {
-        transform: translateY(-10px);
+        transform: translateY(-1rem);
     }
     100% {
         opacity: 1;
