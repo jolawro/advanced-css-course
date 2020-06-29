@@ -1,0 +1,16 @@
+{
+  "name": "advance-css-course-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main-style.css --watch"
+  },
+  "author": "JolW",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {}
+}
