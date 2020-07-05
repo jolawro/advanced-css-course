@@ -75,7 +75,7 @@ body {
     /* relatet to element itself */
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
 }
 
 .heading-promary {

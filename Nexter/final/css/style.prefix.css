@@ -55,7 +55,7 @@ body {
     color: #54483A; }
 
 .heading-3 {
-  font-size: 1.6rem;
+  font-size: $default-font-size;
   color: #c69963;
   text-transform: uppercase; }
 
@@ -183,7 +183,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     color: #aaa; }
     .header__seenon-text::before, .header__seenon-text::after {
       content: "";
@@ -379,7 +379,7 @@ body {
     z-index: 3;
     width: 80%;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     text-align: center;
     padding: 1.25rem;
     background-color: #101d2c;

@@ -1,7 +1,6 @@
 .row {
     // if we have enought space than use this specified paramentr. If view port is smaller than specified width than width user 100% of awaliable space
     max-width: $grid-width;
-    background-color: #eee;
     // center block element in side other block elements
     margin: 0 auto; // auto margin on the left and the right side which will be de same
 
