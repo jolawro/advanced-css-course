@@ -42,3 +42,31 @@
         transform: translateY(0);
     }
 }
+
+@keyframes fullRotation {
+    from {
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(10rem);
+    }
+    50% {
+        transform: translateY(-10rem);
+    }
+    75% {
+        transform: translateX(-10rem);;
+    }
+    85% {
+        transform: translateY(10rem);
+    }
+    100% {
+        transform: translateX(10rem);
+    }
+}

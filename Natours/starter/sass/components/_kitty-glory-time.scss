@@ -1,0 +1,80 @@
+.section-glory-time {
+    position: absolute;
+    padding: 20rem 0;
+    margin: 0 auto;
+    width: 50rem;
+    height: 20rem;
+    border-radius: 100%;
+    background-color: gold;
+    animation: wave 4s linear 0s infinite normal none;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.section-glory-time-1 {
+    position: absolute;
+    padding: 20rem 0;
+    margin: 0 auto;
+    width: 50rem;
+    height: 20rem;
+    border-radius: 100%;
+    background-color: gold;
+    animation: wave 4s linear 2s infinite normal none;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}.section-glory-time-2 {
+    position: absolute;
+
+    padding: 20rem 0;
+    margin: 0 auto;
+    width: 50rem;
+    height: 20rem;
+    border-radius: 100%;
+    background-color: gold;
+    animation: wave 4s linear 3s infinite normal none;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}.section-glory-time-3 {
+    position: absolute;
+
+    padding: 20rem 0;
+    margin: 0 auto;
+    width: 50rem;
+    height: 20rem;
+    border-radius: 100%;
+    background-color: gold;
+    animation: wave 4s linear 4s infinite normal none;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}.section-glory-time-4 {
+    position: absolute;
+
+    padding: 20rem 0;
+    margin: 0 auto;
+    width: 50rem;
+    height: 20rem;
+    border-radius: 100%;
+    background-color: gold;
+    animation: wave 4s linear 5s infinite normal none;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}.section-glory-time-5 {
+    position: absolute;
+
+    padding: 20rem 0;
+    margin: 0 auto;
+    width: 50rem;
+    height: 20rem;
+    border-radius: 100%;
+    background-color: gold;
+    animation: wave 4s linear 6s infinite normal none;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.cat-box img  {
+    display: block;
+    width: 100%;
+    // animation: fullRotation 2s linear infinite;
+    animation-name: fullRotation;
+animation-duration: 4s;
+animation-timing-function: linear;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+animation-direction: normal;
+animation-fill-mode: none;
+animation-play-state: running;
+
+}
