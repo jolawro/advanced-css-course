@@ -309,6 +309,18 @@ body {
   animation-fill-mode: none;
   animation-play-state: running; }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .card__side {
+    background-color: red;
+    height: 50rem;
+    color: white;
+    font-size: 2rem;
+    transition: all .5s; }
+  .card:hover .card__side {
+    transform: rotateY(180deg); }
+
 .header {
   position: relative;
   height: 95vh;
@@ -367,3 +379,8 @@ body {
   background-size: cover;
   margin-top: -10rem;
   clip-path: polygon(0 10%, 0 100%, 100% 90%, 100% 0); }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -10vh; }
