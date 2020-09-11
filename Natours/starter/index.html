@@ -258,6 +258,12 @@
         </div>
       </section>
       <section class="section-stories">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="video/webm" />
+          </video>
+        </div>
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             We make peopele genuinely happy
@@ -319,6 +325,43 @@
         </div>
         <div class="u-center-text u-margin-bottom-huge">
           <a href="#" class="btn btn-text">Read all Story &rrarr;</a>
+        </div>
+      </section>
+      <section class="section-book">
+        <!-- we use row class becouse we want this element on the center of the paremnt element -->
+        <div class="row">
+          <div class="book">
+            <!-- book__form is set as a BEM element, boecouse it is unique element for this page. Form itself will be a resuable componet -->
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">
+                    Start booking now
+                  </h2>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full Name"
+                    required
+                    id="name"
+                  />
+                  <label for="name" class="form__label">full name</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Email"
+                    required
+                    id="email"
+                  />
+                  <label for="email" class="form__label">email</label>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
