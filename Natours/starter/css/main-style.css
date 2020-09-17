@@ -522,6 +522,48 @@ body {
   /*it really gone. If we left only opacity: 0; the element will be still on the page, but only invisible. So with visibility: hidden it really gone. So why don't use just visibility property? Because visibility property isn't animate, but we want animate the effect with this placeholder by transition.*/
   transform: translateY(-4rem); }
 
+.form__radio-group {
+  width: 49%;
+  display: inline-block; }
+
+.form__radio-input {
+  display: none; }
+
+.form__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 5rem; }
+
+.form__radio-button {
+  width: 3rem;
+  height: 3rem;
+  border: 5px solid #55c57a;
+  border-radius: 50%;
+  display: inline-block;
+  /*inline-block is better option that only block, because all elements want to occupy whole line */
+  position: absolute;
+  top: 0;
+  left: -0.4rem; }
+  .form__radio-button::after {
+    content: "";
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    position: absolute;
+    /*parent for position absolute doesn't have to be relative, it just need to be specified in the parent element*/
+    top: 50%;
+    left: 50%;
+    /*because we want this element in the middle */
+    transform: translate(-50%, -50%);
+    background-color: #55c57a;
+    opacity: 0;
+    transition: all 0.2s; }
+
+.form__radio-input:checked ~ .form__radio-label > .form__radio-button::after {
+  opacity: 1; }
+
 .header {
   position: relative;
   height: 95vh;
