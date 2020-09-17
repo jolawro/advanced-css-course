@@ -479,6 +479,49 @@ body {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  /*input doesn't have specify font family. It browser change. So we need to specify for input the font family directly*/
+  color: inherit;
+  /*font color is not inherit*/
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  transition: all 0.3s; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+  .form__input:focus {
+    outline: none;
+    /*never left input without pointing which input box is active. You can replace default outline style by box shadow amd border-bottom: ; property */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #55c57a; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #ff7730; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  /*2rem because we want it in the same position what is the placeholder in input place*/
+  margin-top: 0.7rem;
+  display: block;
+  /*with out display: block we can't set properties which manipulating width or height */
+  transition: all 0.3s; }
+
+.form__input:placeholder-shown + .form__label {
+  /*if placeholder is focused we want see nothing in side input. In this case we don't want see label in side input*/
+  opacity: 0;
+  visibility: hidden;
+  /*it really gone. If we left only opacity: 0; the element will be still on the page, but only invisible. So with visibility: hidden it really gone. So why don't use just visibility property? Because visibility property isn't animate, but we want animate the effect with this placeholder by transition.*/
+  transform: translateY(-4rem); }
+
 .header {
   position: relative;
   height: 95vh;
