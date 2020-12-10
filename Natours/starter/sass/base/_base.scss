@@ -8,10 +8,27 @@
 
 html {
     // font size is typographt too, but it is size used by rem in entire app, so it global definition what 1 rem is.
-font-size: 62.5%;
+font-size: 62.5%; // 1rem = 16px
+
+@include respond(tab-lnad){ //1200px
+    font-size: 50%;
+}
+
+@include respond(tab-port){ //900px
+    font-size: 50%;
+}
+
+@include respond(big-screen){ // 1800+px
+    font-size: 50%;
+}
 }
 
 body {
     box-sizing: border-box; 
+    padding: 3rem;
+
+    @include respond(phone){
+        padding: 0;
+    }
 
 }

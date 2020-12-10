@@ -4,9 +4,13 @@
     // center block element in side other block elements
     margin: 0 auto; // auto margin on the left and the right side which will be de same
 
+    @include respond(tab-port){
+        max-width: 50rem;
+    }
+
     // eferything with out last child
     &:not(:last-child) { 
-        margin-bottom: $gutter-vertical;
+        margin-bottom: $gutter-vertical-small;
     }
     @include clearfix;
 
@@ -16,6 +20,11 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include respond(tab-port){
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
         }
     }
     // caclulate with calc() math function. We can mix units

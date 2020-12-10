@@ -12,3 +12,37 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/*Definition of breakpoints:
+- phone: max 600px 
+- tab-port: max 900px
+- tab-lnad: 1200px
+- big-screen: 1800+px
+
+We use em as a unit becouse we want to compare size of the set up browser size which can be customise by user.
+1em = 16px
+
+*/
+
+@mixin respond($breakpoint) {
+@if $breakpoint == phone { 
+    @media (max-width: 37.5em) {
+        @content
+    }
+}
+@if $breakpoint == tab-port { 
+    @media (max-width: 56.25em) {
+        @content
+    }
+}
+@if $breakpoint == tab-lnad { 
+    @media (max-width: 75em) {
+        @content
+    }
+}
+@if $breakpoint == big-screen { 
+    @media (min-width: 112.5em) {
+        @content
+    }
+}
+}
