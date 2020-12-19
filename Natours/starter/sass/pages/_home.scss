@@ -67,14 +67,42 @@
       transparent 50%
     ),
     url(../img/nat-10.jpg);
-  // clip-path: polygon(0 0, 60% 0, 50% 100%, 0 100%);
-  background-size: cover;
+  background-size: cover; // 100%set picture to fit in x direction
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-  height: 50rem;
+
+  @include respond(tab-pad){
+    background-image: linear-gradient(
+      to right,
+      rgba($color-white, 0.9) 0,
+      rgba($color-white, 0.9) 65%,
+      transparent 65%
+    ),
+    url(../img/nat-10.jpg);
+    background-size: cover; // set picture to fit in both direction
+
+  }
+
+  @include respond(phone){
+    background-image: linear-gradient(
+      to right,
+      rgba($color-white, 0.9) 0,
+      rgba($color-white, 0.9) 100%
+    ),
+    url(../img/nat-10.jpg);
+    background-size: cover; // set picture to fit in both direction
+
+  }
 
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include respond(tab-pad){
+      width: 70%;
+    }
+    @include respond(phone){
+      width: 100%;
+    }
   }
 }
