@@ -6,11 +6,15 @@
 
     @include respond(tab-port){
         max-width: 50rem;
+        padding: 0 3rem;
     }
 
     // eferything with out last child
     &:not(:last-child) { 
-        margin-bottom: $gutter-vertical-small;
+        margin-bottom: $gutter-vertical;
+        @include respond(tab-port){
+            margin-bottom: $gutter-vertical-small;
+        }
     }
     @include clearfix;
 
@@ -25,6 +29,9 @@
                 margin-right: 0;
                 margin-bottom: $gutter-vertical-small;
             }
+        }
+        @include respond(tab-port){
+            width: 100% !important;
         }
     }
     // caclulate with calc() math function. We can mix units
