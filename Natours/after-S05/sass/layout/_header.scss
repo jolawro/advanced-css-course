@@ -11,6 +11,14 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
+    @media (min-resolution: 921dpi) and (min-width: 37em), (min-width: 2000em) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
+        url(../img/hero.jpg);
+    }
+
     &__logo-box {
         position: absolute;
         top: 4rem;

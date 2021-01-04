@@ -14,6 +14,10 @@
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         -webkit-background-clip: text;
         color: transparent;
+                @media (min-resolution: 921dpi) and (min-width: 37em), (min-width: 2000em) {
+                    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+            
+                }
     }
 
     &:hover {
