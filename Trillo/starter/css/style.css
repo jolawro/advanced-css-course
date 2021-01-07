@@ -67,15 +67,16 @@ are universal components. There can be footer too. Why hotel view is here?
   min-height: 50rem; }
 
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background-color: #ffffff;
   border-bottom: var(--color-grey-light-2);
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
 .content {
-  display: flex;
-  align-items: stretch; }
+  display: flex; }
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
@@ -87,17 +88,52 @@ are universal components. There can be footer too. Why hotel view is here?
   background-color: orange; }
 
 .logo {
-  height: 3.25rem; }
+  height: 3.25rem;
+  margin-left: 3rem; }
 
-.search__icon {
-  height: 2rem;
-  width: 2rem; }
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--color-grey-light-2);
+    color: inherit;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    transition: all .2s;
+    margin-right: -3.5rem;
+    border: none;
+    width: 90%; }
+    .search__input:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3); }
+    .search__input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--color-grey-light-4); }
+  .search__input:focus + .search__button {
+    background-color: var(--color-grey-light-3); }
+  .search__button {
+    border: none;
+    background-color: var(--color-grey-light-2); }
+    .search__button:focus {
+      outline: none; }
+    .search__button:active {
+      transform: translateY(2px); }
+  .search__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-grey-dark-3); }
 
 .user-nav {
   display: flex; }
   .user-nav__icon {
     height: 2.25rem;
-    width: 2.25rem; }
+    width: 2.25rem;
+    fill: var(--color-grey-dark-3); }
   .user-nav__user-photo {
     height: 3.25rem;
     border-radius: 50%; }

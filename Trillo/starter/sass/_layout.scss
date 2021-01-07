@@ -12,18 +12,19 @@ are universal components. There can be footer too. Why hotel view is here?
 }
 
 .header {
+    font-size: 1.4rem;
     height: 7rem;
     background-color: #ffffff;
     border-bottom: var(--color-grey-light-2);
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 
 .content {
     display: flex;
-    align-items: stretch;
 }
 
 .sidebar {
