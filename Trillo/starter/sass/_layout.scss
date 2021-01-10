@@ -15,7 +15,7 @@ are universal components. There can be footer too. Why hotel view is here?
     font-size: 1.4rem;
     height: 7rem;
     background-color: #ffffff;
-    border-bottom: var(--color-grey-light-2);
+    border-bottom: 1px solid var(--color-grey-light-2);
 
     display: flex;
     justify-content: space-between;
@@ -25,15 +25,21 @@ are universal components. There can be footer too. Why hotel view is here?
 
 .content {
     display: flex;
+    align-self: stretch;
 }
 
+// Navigation is usually unordered list
 .sidebar {
     background-color: var(--color-grey-dark-1);
     flex: 0 0 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hotel-view {
     background-color: #fff;
     flex: 1;
-    background-color: orange;
+    // testing purposes
+    height: 80rem;
 }
